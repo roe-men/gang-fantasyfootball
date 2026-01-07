@@ -24,7 +24,7 @@ export const STAT_OPTIONS: StatOption[] = [
   {
     key: 'win_percentage',
     label: 'Win %',
-    format: (value) => value !== null ? (Number(value) * 100).toFixed(1) + '%' : '-'
+    format: (value) => value !== null ? Number(value).toFixed(1) + '%' : '-'
   },
   {
     key: 'avg_points_per_season',
@@ -39,7 +39,7 @@ export const STAT_OPTIONS: StatOption[] = [
   {
     key: 'playoff_percentage',
     label: 'Playoff %',
-    format: (value) => value !== null ? (Number(value) * 100).toFixed(1) + '%' : '-'
+    format: (value) => value !== null ? Number(value).toFixed(1) + '%' : '-'
   },
   {
     key: 'seasons_played',
