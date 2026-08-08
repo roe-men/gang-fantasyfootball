@@ -33,3 +33,24 @@ export interface StatOption {
   label: string;
   format: (value: number | null) => string;
 }
+
+export type DraftPosition = 'QB' | 'RB' | 'WR' | 'TE';
+
+export interface DraftPick {
+  id: string;
+  year: number;
+  round: number;
+  pick_number: number;
+  owner_name: string;
+  player_name: string;
+  position: DraftPosition;
+  nfl_team: string | null;
+  points: number;
+  pos_rank: number | null;
+  starter_avg: number;
+  value_vs_starter: number;
+  adp: number | null;
+  adp_delta: number | null;
+}
+
+export type AxisMode = 'slot' | 'reach';
